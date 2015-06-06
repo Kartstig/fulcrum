@@ -19,6 +19,10 @@ gem 'pg', group: :postgres
 gem 'mysql2', group: :mysql
 gem 'sqlite3', group: :sqlite
 
+gem 'thin'
+gem 'foreman'
+gem 'resque'
+
 group :production do
   gem 'rails_12factor'
 end
