@@ -7,7 +7,7 @@ MAINTAINER Herman Singh "kartstig@gmail.com"
 RUN apt-get update && apt-get install -y build-essential libpq-dev \
   libxml2-dev libxslt1-dev libqt4-webkit libqt4-dev xvfb nodejs
 
-# Build Bundle and Start APp
+# Build Bundle and Start App
 EXPOSE 5000
 WORKDIR /app
-CMD bundle install && foreman start -c web=5
+CMD bundle install && foreman start -c web=4
